@@ -1,7 +1,6 @@
 package com.desmond.rightmove.data.model
 
 
-import android.provider.ContactsContract.Data
 import com.desmond.rightmove.core.mappers.DataModel
 import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass

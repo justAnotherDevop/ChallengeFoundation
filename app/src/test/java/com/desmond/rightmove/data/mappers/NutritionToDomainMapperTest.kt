@@ -3,7 +3,7 @@ package com.desmond.rightmove.data.mappers
 import com.desmond.rightmove.data.model.Nutrition
 import io.mockk.every
 import io.mockk.mockk
-import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 
 class NutritionToDomainMapperTest {

@@ -1,7 +1,6 @@
 package com.desmond.rightmove.domain.mappers
 
 import com.desmond.rightmove.core.mappers.Mapper
-import com.desmond.rightmove.data.mappers.NutritionToDomainMapper
 import com.desmond.rightmove.domain.model.InstructionsDomainModel
 import com.desmond.rightmove.domain.model.NutritionDomainModel
 import com.desmond.rightmove.domain.model.RecipeDomainModel

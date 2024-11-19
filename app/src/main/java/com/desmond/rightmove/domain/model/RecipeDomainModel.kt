@@ -1,7 +1,6 @@
 package com.desmond.rightmove.domain.model
 
 import com.desmond.rightmove.core.mappers.DomainModel
-import com.squareup.moshi.Json
 
 data class RecipeDomainModel(
     val recipeId: Int,

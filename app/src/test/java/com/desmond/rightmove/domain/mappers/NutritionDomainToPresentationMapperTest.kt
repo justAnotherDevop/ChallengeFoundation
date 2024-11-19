@@ -1,10 +1,9 @@
 package com.desmond.rightmove.domain.mappers
 
 import com.desmond.rightmove.domain.model.NutritionDomainModel
-import com.desmond.rightmove.domain.model.RecipeDomainModel
 import io.mockk.every
 import io.mockk.mockk
-import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 
 class NutritionDomainToPresentationMapperTest {
