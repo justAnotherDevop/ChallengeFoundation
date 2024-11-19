@@ -9,11 +9,11 @@ plugins {
 
 android {
 
-    namespace = "com.desmond.challengefoundation"
+    namespace = "com.desmond.rightmove"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.desmond.challengefoundation"
+        applicationId = "com.desmond.rightmove"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -70,6 +70,7 @@ android {
 }
 
 dependencies {
+    testImplementation(libs.junit.jupiter)
     kapt(libs.dagger.compiler)
 
     implementation(libs.androidx.core.ktx)
@@ -99,6 +100,7 @@ dependencies {
     implementation(libs.okHttp)
     implementation(libs.okHttpLoggingInterceptor)
     implementation(libs.retrofit)
+    implementation(libs.moshi)
 
     testImplementation(libs.core.testing)
     implementation(libs.gson)
