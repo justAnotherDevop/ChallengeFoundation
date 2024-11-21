@@ -28,10 +28,12 @@ android {
 
     buildTypes {
         debug {
-            buildConfigField("String", "BASE_URL", "\"https://www.google.com\"")
+            buildConfigField("String", "RAPID_API_KEY", "\"${project.findProperty("RAPID_API_KEY")}\"")
+            buildConfigField("String", "BASE_URL", "\"${project.findProperty("BASE_URL")}\"")
         }
         release {
-            buildConfigField("String", "BASE_URL", "\"https://www.google.com\"")
+            buildConfigField("String", "RAPID_API_KEY", "\"${project.findProperty("RAPID_API_KEY")}\"")
+            buildConfigField("String", "BASE_URL", "\"${project.findProperty("BASE_URL")}\"")
 
             isMinifyEnabled = false
             proguardFiles(
@@ -66,7 +68,6 @@ android {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
     }
-
 }
 
 dependencies {
@@ -101,6 +102,8 @@ dependencies {
     implementation(libs.okHttpLoggingInterceptor)
     implementation(libs.retrofit)
     implementation(libs.moshi)
+    implementation(libs.moshiKotlin)
+    implementation(libs.moshiConverter)
 
     testImplementation(libs.core.testing)
     implementation(libs.gson)
@@ -111,6 +114,7 @@ dependencies {
     testImplementation(libs.assertk)
     testImplementation(libs.coroutines.test)
     testImplementation(libs.junit)
+    testImplementation(libs.turbine)
 
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

@@ -8,15 +8,15 @@ import com.squareup.moshi.JsonClass
 @JsonClass(generateAdapter = true)
 data class Nutrition(
     @Json(name = "calories")
-    val calories: Int,
+    val calories: Int?,
     @Json(name = "carbohydrates")
-    val carbohydrates: Int,
+    val carbohydrates: Int?,
     @Json(name = "fat")
-    val fat: Int,
+    val fat: Int?,
     @Json(name = "fiber")
-    val fiber: Int,
+    val fiber: Int?,
     @Json(name = "protein")
-    val protein: Int,
+    val protein: Int?,
     @Json(name = "sugar")
-    val sugar: Int,
+    val sugar: Int?,
 ): DataModel

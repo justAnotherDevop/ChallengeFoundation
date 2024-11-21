@@ -21,10 +21,10 @@ data class RecipeInstruction(
 ) : PresentationModel
 
 data class RecipeNutrition(
-    val calories: Int,
-    val carbohydrates: Int,
-    val fat: Int,
-    val fiber: Int,
-    val protein: Int,
-    val sugar: Int,
+    val calories: Int?,
+    val carbohydrates: Int?,
+    val fat: Int?,
+    val fiber: Int?,
+    val protein: Int?,
+    val sugar: Int?,
 ) : PresentationModel
